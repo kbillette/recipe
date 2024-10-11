@@ -1,3 +1,5 @@
+/*--imported fonts--*/
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
 /* css reset */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -60,3 +62,85 @@ table {
 }
     
 /* global/mobile */
+html {
+	background-color: var(--light-seafoam);
+}
+
+body {
+	min-width: 414px;
+	font-family: "Montserrat", "Bebas-Neue", sans-serif;
+	background-color: var(--white);
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: var(--white);
+	font-weight: bold;
+	padding: 20px;
+}
+header h1{
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 40px;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 30px;
+}
+
+.download {
+	background-color: var(--white);
+	font-family: "Bebas Neue", sans-serif;
+	color: var(--orange);
+	font-size: 20px;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.recipe img {
+	width: 100%;
+}
+
+p {
+	font-size: 16px;
+}
+
+.recipe p {
+	margin: 5px;
+	padding: 5px;
+}
+
+.recipe li {
+	margin: 10px 30px;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.recipe ol li{
+	margin: 20px 30px;
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+
+.sides {
+	background-color: var(--seafoam);
+}
+
+.sides h2 {
+	padding: 20px;
+}
+
+.sides h3 {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 25px;
+}
+
+.sides img {
+	width: 25%;
+	margin: 20px;
+}
