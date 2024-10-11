@@ -77,7 +77,8 @@ header {
 	justify-content: center;
 	background-color: var(--white);
 	font-weight: bold;
-	padding: 20px;
+	margin: 160px 0px 0px 0px;
+	padding: 40px;
 }
 header h1{
 	font-family: "Bebas Neue", sans-serif;
@@ -176,5 +177,155 @@ dl dt {
 }
 
 nav {
+	background-color: var(--white);
 	position: absolute;
+	top: 0px;
+	width: 100%;
+	font-size: 20px;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.home {
+	background-color: var(--orange);
+	padding: 20px 100px;
+}
+
+.menu, .sign-up {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	color: var(--orange);
+}
+
+nav li {
+	display: block;
+	position: relative;
+}
+
+nav li:hover, nav li:focus-within {
+	cursor: pointer;
+}
+
+nav ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	display: none;
+}
+
+nav ul li ul img {
+	width: 25%;
+}
+
+ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+	background-color: var(--white);
+}
+
+form {
+	display: flex;
+	position: absolute;
+	top: 110px;
+	left: 130px;
+	background-color: var(--white);
+	border-width: 2px;
+	border-color: var(--orange);
+	border-style: solid;
+}
+
+form button {
+	background-color: var(--orange);
+	border-color: var(--orange);
+}
+
+form label {
+	visibility: hidden;
+	position: absolute;
+}
+
+.connect li {
+	display: inline;
+	list-style: none;
+	color: var(--orange);
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 20px;
+}
+
+.facebook, .instagram, .youtube, .tiktok {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+footer p {
+	font-size: 20px;
+}
+
+footer img {
+	width: 50%;
+}
+
+/* medium */
+@media screen and (min-width: 768px) {
+	body {
+		min-width: 768px;
+	}
+
+	nav ul li ul {
+		visibility: visible;
+		display: inline;
+	}
+
+	.recipe {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.recipe figure {
+		grid-column: 1/4;
+	}
+
+	.recipe p {
+		grid-column: 1/4;
+	}
+
+	.details {
+		grid-column: 1/4;
+	}
+
+
+	.ingredients {
+		grid-column: 1/2;
+	}
+
+	.directions {
+		grid-column: 2/4;
+	}
+}
+
+
+
+/* large */
+@media screen and (min-width: 1280px) {
+
 }
