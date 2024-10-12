@@ -327,5 +327,18 @@ footer img {
 
 /* large */
 @media screen and (min-width: 1280px) {
+	body {
+		min-width: 1280px;
+
+	}
+
+	.sides {
+		display: flex;
+	}
+
+	.mexican-rice {
+		display: flex;
+	}
+
 
 }
